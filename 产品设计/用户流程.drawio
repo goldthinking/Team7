@@ -1,0 +1,110 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="PHEEE1x4JYwI8sBXzwhI">
+    <mxGraphModel dx="1434" dy="2006" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ctmhZavWP4_uxRe_W525-37" value="" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;fillColor=#E6E6E6;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="260" y="160" width="500" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-4" target="ctmhZavWP4_uxRe_W525-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;开始&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="10" y="230" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-5" target="ctmhZavWP4_uxRe_W525-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-5" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;选择剧本&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;并开始游戏&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-7" target="ctmhZavWP4_uxRe_W525-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-7" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;剧本环节&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-8" target="ctmhZavWP4_uxRe_W525-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-8" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;搜证环节&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="450" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-9" target="ctmhZavWP4_uxRe_W525-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-9" target="ctmhZavWP4_uxRe_W525-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="741" y="255" />
+              <mxPoint x="741" y="330" />
+              <mxPoint x="280" y="330" />
+              <mxPoint x="280" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-9" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;推理环节&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="601" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-11" value="线索类型" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="480" y="-110" width="210" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-12" value="传统图文线索：角色间的对话、案发现场的情况、死亡原因、现场找到的可疑物品..." style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;gradientColor=#7ea6e0;" vertex="1" parent="ctmhZavWP4_uxRe_W525-11">
+          <mxGeometry y="30" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-13" value="AI模拟角色问答：玩家选择向预先设定的案件的关键角色发起提问，由AI生成回答。" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;gradientColor=#7ea6e0;" vertex="1" parent="ctmhZavWP4_uxRe_W525-11">
+          <mxGeometry y="90" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-14" value="AI上帝海龟汤：玩家向AI提出与情节相关的问题，并由AI给出回答，回答仅可能是：是/否/部分正确/与案件无关" style="text;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;gradientColor=#7ea6e0;" vertex="1" parent="ctmhZavWP4_uxRe_W525-11">
+          <mxGeometry y="150" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;给出每一&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;部分的&lt;/font&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;剧本&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="190" y="400" width="139.09" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-16" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;提供地图搜证、问答&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;搜证等多种搜证模式，&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;系统记录线索，便于&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;用户梳理&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="372" y="390" width="196" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-17" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;玩家使用自然语言&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;回答每一章节的若干&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;预设问题，由AI进行&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;打分&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="591" y="390" width="196" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-19" target="ctmhZavWP4_uxRe_W525-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-19" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;最终环节&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="787" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-20" value="&lt;div&gt;&lt;span style=&quot;font-size: 14px; background-color: initial;&quot;&gt;玩家使用自然语言&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;回答与剧情真相有关的&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;若干问题，最后给出&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;真相，并对玩家的解答&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;情况进行汇总和评分&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fontSize=16;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="807" y="380" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-22" target="ctmhZavWP4_uxRe_W525-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-22" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;打分评价&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="957" y="227.5" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;结束&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1127" y="230" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-8" target="ctmhZavWP4_uxRe_W525-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.51;entryY=0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-7" target="ctmhZavWP4_uxRe_W525-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.548;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-8" target="ctmhZavWP4_uxRe_W525-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.49;entryY=0.121;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-9" target="ctmhZavWP4_uxRe_W525-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.467;entryY=0.124;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ctmhZavWP4_uxRe_W525-19" target="ctmhZavWP4_uxRe_W525-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctmhZavWP4_uxRe_W525-39" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;小节&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="690" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
