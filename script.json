@@ -1,88 +1,292 @@
-# 剧本格式
-
-```json
 {
-    "characters": [ // 前后端默认第一个角色为玩家
-        {
-            "name": "苏砚",
-            "avatar": "https://example.com/avatars/dr_lin.jpg",
-            "desc": "林家表少爷/表小姐，自幼被收养，聪明机敏，善观察推理，对林家有深厚感情，却对家族秘密好奇。。"
-        },
-        {
-            "name": "威廉·罗斯",
-            "avatar": "https://example.com/avatars/william.jpg",
-            "desc": "庄园主人，富有的企业家，拥有神秘的过去。"
-        },
-        ...
-    ],
-    "chapters": [
-        {
-            "title": "神秘的开端",
-            "content": "这是一个风雨交加的夜晚，你收到了一封烫金边的神秘邀请函。信封上用优雅的字体写着：\"亲爱的客人，诚邀您于今晚8点莅临玫瑰庄园，参加一场特别的聚会。\"落款是庄园主人威廉·罗斯。...",
-            "map": {
-                "image": "https://example.com/maps/mansion_map.jpg",
-                "locations": [
-                    {
-                        "name": "李小姐的房间",
-                        "position": {
-                            "left": "15%",
-                            "top": "60%"
-                        },
-                        "clues": [
-                            {
-                                "image": "https://example.com/clues/broken_watch.jpg",
-                                "desc": "断裂的怀表（时间停在11:05）",
-                            },
-                            {
-                                "image": "https://example.com/clues/bloodstain.jpg",
-                                "desc": "书桌上的血迹"
-                            }
-                        ]
-                    },
-                    {
-                        "name": "王管家的房间",
-                        "position": {
-                            "left": "22%",
-                            "top": "26%"
-                        },
-                        "clues": [
-                            {
-                                "image": "https://example.com/clues/medicine.jpg",
-                                "description": "床下的药瓶"
-                            }
-                        ]
-                    }
-                ],
-            },
-            "npcs": [
-                {
-                    "name": "李小姐",
-                    "avatar": "https://example.com/avatars/ms_li.jpg",
-                    "dialogues": 1
-                },
-                {
-                    "name": "王管家",
-                    "avatar": "https://example.com/avatars/butler_wang.jpg",
-                    "dialogues": 3
-                }
-            ],
-            "truth": "这里存本章节的真相和与其他npc有关的文本",
-            "questions": [
-                {
-                    "question": "这个雪夜里谁最有可能进入死者的房间？为什么？",
-                    "referenceAnswer": "分析足迹和时间线，应该是王管家。雪地上有新鲜足迹通向死者房间，而且根据时间线王管家是最后见到死者的人。",
-                },
-                {
-                    "question": "李小姐和王管家的证词冲突，谁更可信？",
-                    "referenceAnswer": "王管家的说法更可信。因为李小姐与死者有经济纠纷且性格冲动，而王管家是老员工，性格稳重没有作案动机。",
-                }
-            ]
-        },
-        ...
-    ],
-    "reveal": {
-        "title": "案件真相",
-        "content": "随着调查的深入，真相逐渐浮出水面。李小姐利用职务之便设置延时机关，通过伪造遗书制造自杀假象。关键证据链完整，包含指纹、纤维物证及墨水鉴定结果..."
-    }
+  "characters": [
+      {
+          "name": "苏砚",
+          "avatar": "imag/苏砚.jpg",
+          "desc": "林家表小姐，自幼被收养，聪明机敏，善观察推理，对林家有深厚感情，却对家族秘密好奇。"
+      },
+      {
+          "name": "林正雄",
+          "avatar": "imag/林正雄.jpg",
+          "desc": "林家现任家主，六十大寿遇害，手段强硬，曾为家族利益不择手段。"
+      },
+      {
+          "name": "柳如烟",
+          "avatar": "imag/柳如烟.jpg",
+          "desc": "林正雄的小妾，容貌艳丽，神色常显慌张，似乎藏有诸多秘密。"
+      },
+      {
+          "name": "林振国",
+          "avatar": "imag/林正国.jpg",
+          "desc": "林家长子，阴沉冷峻，对父亲的死态度微妙，暗中觊觎家族产业。"
+      },
+      {
+          "name": "陈福",
+          "avatar": "imag/陈福.jpg",
+          "desc": "林家管家，忠诚谨慎，知晓林家多年前的秘辛，心怀愧疚。"
+      }
+  ],
+  "chapters": [
+      {
+          "title": "诡异的寿宴前奏",
+          "content": "故事发生在民国二十五年的江南，当地最大的豪门林家正在筹备一场盛大的寿宴，庆祝家主林正雄六十大寿。你作为林家表少爷/表小姐苏砚，因与林家关系密切受邀参加寿宴。刚踏入林家大宅，就感受到一股压抑的氛围。在与林家众人寒暄时，注意到林正雄的小妾柳如烟神色慌张，而大儿子林振国则一脸阴沉。当晚，你在自己房间休息时，听到走廊传来一阵若有若无的哭声，循着声音找去，却在转角处发现神龛上的血手印，还没来得及细看，就被管家陈福匆匆拉走，称是小孩子的恶作剧。",
+          "map": {
+              "image": "https://example.com/maps/lin_mansion_map.jpg",
+              "locations": [
+                  {
+                      "name": "神龛",
+                      "position": {
+                          "left": "30%",
+                          "top": "40%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/god_shrine_blood_print.jpg",
+                              "desc": "神龛上的血手印，形状奇特，像是被某种特殊工具按压而成"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "苏砚的房间",
+                      "position": {
+                          "left": "10%",
+                          "top": "20%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/yellowed_note.jpg",
+                              "desc": "在枕头下发现的泛黄纸条，上面写着“小心身边人”"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "npcs": [
+              {
+                  "name": "柳如烟",
+                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "dialogues": 1
+              },
+              {
+                  "name": "林振国",
+                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "dialogues": 1
+              },
+              {
+                  "name": "陈福",
+                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "dialogues": 2
+              }
+          ],
+          "truth": "柳如烟因知晓复仇计划即将展开而慌张，林振国则在暗中谋划夺取产业；管家陈福知晓血手印与复仇有关，所以急于掩盖 。",
+          "questions": [
+              {
+                  "question": "神龛上的血手印可能与谁有关？",
+                  "referenceAnswer": "血手印形状特殊，结合柳如烟的异常表现，可能与她的复仇计划有关。"
+              },
+              {
+                  "question": "纸条是谁留下的？",
+                  "referenceAnswer": "从目前信息推测，可能是知晓部分秘密且关心苏砚的人留下，管家陈福有一定嫌疑。"
+              }
+          ]
+      },
+      {
+          "title": "命案发生",
+          "content": "寿宴前一晚，一声尖叫打破了林家的宁静。你赶到林正雄书房时，发现林正雄倒在血泊中，胸口插着一把匕首，周围散落着一些奇怪的符号。经初步检查，死亡时间大约在晚上十点到十一点之间。林家人纷纷聚集，互相指责，现场一片混乱。柳如烟的手帕上有少量血迹，她解释说是不小心划伤了手；林振国的袖口沾有一些墨水，他称是在书房写东西时不小心沾上的。书房的窗户虚掩，窗外的泥地上有一串脚印，但只延伸到窗台附近，没有进出的痕迹，匕首上也没有指纹，显然被凶手擦拭过。",
+          "map": {
+              "image": "https://example.com/maps/lin_mansion_map.jpg",
+              "locations": [
+                  {
+                      "name": "林正雄书房",
+                      "position": {
+                          "left": "50%",
+                          "top": "30%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/murder_scene.jpg",
+                              "desc": "林正雄书房命案现场，尸体胸口插着匕首，周围有神秘符号"
+                          },
+                          {
+                              "image": "https://example.com/clues/window_footprint.jpg",
+                              "desc": "书房窗外泥地上延伸到窗台的脚印"
+                          },
+                          {
+                              "image": "https://example.com/clues/murder_dagger.jpg",
+                              "desc": "擦拭过指纹的带血匕首"
+                          },
+                          {
+                              "image": "https://example.com/clues/mysterious_symbols.jpg",
+                              "desc": "与林家祠堂族谱图腾相似的神秘符号"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "柳如烟的房间",
+                      "position": {
+                          "left": "35%",
+                          "top": "15%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/liu_ru_yan_handkerchief.jpg",
+                              "desc": "柳如烟带有少量血迹的手帕"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "林振国的书房",
+                      "position": {
+                          "left": "60%",
+                          "top": "18%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/lin_zhen_guo_cuff_ink.jpg",
+                              "desc": "林振国袖口沾有墨水的衣袖"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "npcs": [
+              {
+                  "name": "柳如烟",
+                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "dialogues": 3
+              },
+              {
+                  "name": "林振国",
+                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "dialogues": 3
+              },
+              {
+                  "name": "陈福",
+                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "dialogues": 2
+              }
+          ],
+          "truth": "柳如烟是凶手，通过窗户进入书房作案，之后伪造现场；林振国知情并试图掩盖 。",
+          "questions": [
+              {
+                  "question": "凶手是如何进入和离开书房的？",
+                  "referenceAnswer": "凶手通过窗户进入，泥地上的脚印只到窗台，可能是利用绳索等工具，离开后收回。"
+              },
+              {
+                  "question": "柳如烟和林振国谁更有嫌疑？",
+                  "referenceAnswer": "柳如烟嫌疑更大，手帕上的血迹与命案存在关联，且其表现异常；林振国可能是帮凶。"
+              }
+          ]
+      },
+      {
+          "title": "迷雾重重",
+          "content": "随着调查的深入，你发现林家的秘密远比想象中复杂。多年前，林正雄为了谋取家族产业，设计陷害了自己的亲兄弟，而那些神秘符号正是当年被陷害者留下的复仇标记。你在柳如烟的房间里，找到一本日记，里面记录了她对林正雄的怨恨，以及她与一个神秘人的往来信件，信件中提到了“计划”。林振国的书房里，有一份关于林家产业的详细资料，其中一些文件被做了特殊标记，似乎在谋划着什么。管家陈福的房间中，发现一张旧照片，照片上是年轻时的林正雄和一个陌生男子，两人表情亲密，但男子的脸被刻意划掉了。在林家的地窖里，还发现一些祭祀用品，与神秘符号有关。",
+          "map": {
+              "image": "https://example.com/maps/lin_mansion_map.jpg",
+              "locations": [
+                  {
+                      "name": "柳如烟的房间",
+                      "position": {
+                          "left": "35%",
+                          "top": "15%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/liu_ru_yan_diary.jpg",
+                              "desc": "记录怨恨和复仇计划的柳如烟日记及信件"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "林振国的书房",
+                      "position": {
+                          "left": "60%",
+                          "top": "18%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/lin_zhen_guo_industry_data.jpg",
+                              "desc": "标记特殊的林家产业资料"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "陈福的房间",
+                      "position": {
+                          "left": "12%",
+                          "top": "45%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/chen_fu_old_photo.jpg",
+                              "desc": "林正雄与陌生男子的旧照片（男子脸被划掉）"
+                          }
+                      ]
+                  },
+                  {
+                      "name": "林家地窖",
+                      "position": {
+                          "left": "75%",
+                          "top": "48%"
+                      },
+                      "clues": [
+                          {
+                              "image": "https://example.com/clues/lin_family_cellar_sacrificial_items.jpg",
+                              "desc": "与神秘符号有关的祭祀用品"
+                          }
+                      ]
+                  }
+              ]
+          },
+          "npcs": [
+              {
+                  "name": "柳如烟",
+                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "dialogues": 2
+              },
+              {
+                  "name": "林振国",
+                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "dialogues": 2
+              },
+              {
+                  "name": "陈福",
+                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "dialogues": 3
+              }
+          ],
+          "truth": "柳如烟是当年被陷害者之女，为复仇策划谋杀；林振国想借此夺取产业；陈福的哥哥是被林正雄陷害的人 。",
+          "questions": [
+              {
+                  "question": "柳如烟的复仇计划是什么？",
+                  "referenceAnswer": "柳如烟利用神秘符号制造恐怖氛围，设计杀死林正雄，完成复仇。"
+              },
+              {
+                  "question": "陈福照片中的男子是谁？",
+                  "referenceAnswer": "照片中的男子是陈福的哥哥，也是当年被林正雄陷害的人。"
+              }
+          ]
+      },
+      {
+          "title": "真相大白",
+          "content": "经过一系列的调查和推理，你终于揭开了真相。原来，柳如烟是当年被陷害者的女儿，她为了复仇，精心策划了这场谋杀。她利用神秘符号制造恐怖氛围，在寿宴前一晚，通过书房窗户进入，杀害了林正雄。而林振国，早就知道柳如烟的计划，但他想借此机会夺取家族产业，所以选择了默许和配合。管家陈福，是当年事件的知情人，他一直心怀愧疚，那张照片上被划掉脸的男子，正是他的亲生哥哥。",
+          "map": {},
+          "npcs": [],
+          "truth": "完整还原柳如烟复仇、林振国谋产、陈福知情的整个事件脉络。",
+          "questions": [
+              {
+                  "question": "指认凶手并说明理由",
+                  "referenceAnswer": "凶手是柳如烟。她有强烈的复仇动机，日记和信件可证明；现场线索与她的行动轨迹相符，如手帕血迹等。林振国是帮凶，他觊觎产业，且行为和资料都显示其参与其中。"
+              },
+              {
+                  "question": "陈福在事件中扮演什么角色？",
+                  "referenceAnswer": "陈福是当年事件的知情人，因愧疚一直保守秘密，在事件中曾试图掩盖部分线索。"
+              }
+          ]
+      }
+  ],
+  "reveal": {
+      "title": "案件真相",
+      "content": "柳如烟作为当年受害者之女，多年来隐忍在林家，精心设计了这场复仇计划。她通过制造神秘符号、利用林振国对产业的贪欲，成功实施了谋杀。林振国明知真相，却为了夺取家族产业选择配合，企图在混乱中达成目的。而管家陈福，因哥哥被林正雄陷害，心怀愧疚，虽然知晓一切，却在道德与忠诚间挣扎，最终在真相面前选择沉默。这场豪门命案，背后是多年的恩怨情仇与利益纠葛，随着真相的揭露，林家也将面临新的动荡。"
+  }
 }
-```
