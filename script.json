@@ -64,17 +64,17 @@
           "npcs": [
               {
                   "name": "柳如烟",
-                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "avatar": "imag/柳如烟.jpg",
                   "dialogues": 1
               },
               {
                   "name": "林振国",
-                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "avatar": "imag/林正国.jpg",
                   "dialogues": 1
               },
               {
                   "name": "陈福",
-                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "avatar": "imag/陈福.jpg",
                   "dialogues": 2
               }
           ],
@@ -94,7 +94,7 @@
           "title": "命案发生",
           "content": "寿宴前一晚，一声尖叫打破了林家的宁静。你赶到林正雄书房时，发现林正雄倒在血泊中，胸口插着一把匕首，周围散落着一些奇怪的符号。经初步检查，死亡时间大约在晚上十点到十一点之间。林家人纷纷聚集，互相指责，现场一片混乱。柳如烟的手帕上有少量血迹，她解释说是不小心划伤了手；林振国的袖口沾有一些墨水，他称是在书房写东西时不小心沾上的。书房的窗户虚掩，窗外的泥地上有一串脚印，但只延伸到窗台附近，没有进出的痕迹，匕首上也没有指纹，显然被凶手擦拭过。",
           "map": {
-              "image": "https://example.com/maps/lin_mansion_map.jpg",
+              "image": "imag/地图2.jpg",
               "locations": [
                   {
                       "name": "林正雄书房",
@@ -104,19 +104,19 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/murder_scene.jpg",
+                              "image": "imag/命案现场.jpg",
                               "desc": "林正雄书房命案现场，尸体胸口插着匕首，周围有神秘符号"
                           },
                           {
-                              "image": "https://example.com/clues/window_footprint.jpg",
+                              "image": "imag/脚印.jpg",
                               "desc": "书房窗外泥地上延伸到窗台的脚印"
                           },
                           {
-                              "image": "https://example.com/clues/murder_dagger.jpg",
+                              "image": "imag/匕首.jpg",
                               "desc": "擦拭过指纹的带血匕首"
                           },
                           {
-                              "image": "https://example.com/clues/mysterious_symbols.jpg",
+                              "image": "imag/神秘符号.jpg",
                               "desc": "与林家祠堂族谱图腾相似的神秘符号"
                           }
                       ]
@@ -129,7 +129,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/liu_ru_yan_handkerchief.jpg",
+                              "image": "imag/手帕.jpg",
                               "desc": "柳如烟带有少量血迹的手帕"
                           }
                       ]
@@ -142,7 +142,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/lin_zhen_guo_cuff_ink.jpg",
+                              "image": "imag/袖口.jpg",
                               "desc": "林振国袖口沾有墨水的衣袖"
                           }
                       ]
