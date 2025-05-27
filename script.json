@@ -152,17 +152,17 @@
           "npcs": [
               {
                   "name": "柳如烟",
-                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "avatar": "imag/柳如烟.jpg",
                   "dialogues": 3
               },
               {
                   "name": "林振国",
-                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "avatar": "imag/林振国.jpg",
                   "dialogues": 3
               },
               {
                   "name": "陈福",
-                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "avatar": "imag/陈福.jpg",
                   "dialogues": 2
               }
           ],
@@ -182,7 +182,7 @@
           "title": "迷雾重重",
           "content": "随着调查的深入，你发现林家的秘密远比想象中复杂。多年前，林正雄为了谋取家族产业，设计陷害了自己的亲兄弟，而那些神秘符号正是当年被陷害者留下的复仇标记。你在柳如烟的房间里，找到一本日记，里面记录了她对林正雄的怨恨，以及她与一个神秘人的往来信件，信件中提到了“计划”。林振国的书房里，有一份关于林家产业的详细资料，其中一些文件被做了特殊标记，似乎在谋划着什么。管家陈福的房间中，发现一张旧照片，照片上是年轻时的林正雄和一个陌生男子，两人表情亲密，但男子的脸被刻意划掉了。在林家的地窖里，还发现一些祭祀用品，与神秘符号有关。",
           "map": {
-              "image": "https://example.com/maps/lin_mansion_map.jpg",
+              "image": "imag/地图3.jpg",
               "locations": [
                   {
                       "name": "柳如烟的房间",
@@ -192,7 +192,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/liu_ru_yan_diary.jpg",
+                              "image": "imag/日记.jpg",
                               "desc": "记录怨恨和复仇计划的柳如烟日记及信件"
                           }
                       ]
@@ -205,7 +205,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/lin_zhen_guo_industry_data.jpg",
+                              "image": "imag/产业资料.jpg",
                               "desc": "标记特殊的林家产业资料"
                           }
                       ]
@@ -218,7 +218,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/chen_fu_old_photo.jpg",
+                              "image": "imag/旧照片.jpg",
                               "desc": "林正雄与陌生男子的旧照片（男子脸被划掉）"
                           }
                       ]
@@ -231,7 +231,7 @@
                       },
                       "clues": [
                           {
-                              "image": "https://example.com/clues/lin_family_cellar_sacrificial_items.jpg",
+                              "image": "imag/祭祀用品.jpg",
                               "desc": "与神秘符号有关的祭祀用品"
                           }
                       ]
@@ -241,17 +241,17 @@
           "npcs": [
               {
                   "name": "柳如烟",
-                  "avatar": "https://example.com/avatars/liu_ru_yan.jpg",
+                  "avatar": "imag/柳如烟.jpg",
                   "dialogues": 2
               },
               {
                   "name": "林振国",
-                  "avatar": "https://example.com/avatars/lin_zhen_guo.jpg",
+                  "avatar": "imag/林振国.jpg",
                   "dialogues": 2
               },
               {
                   "name": "陈福",
-                  "avatar": "https://example.com/avatars/chen_fu.jpg",
+                  "avatar": "imag/陈福.jpg",
                   "dialogues": 3
               }
           ],
