@@ -7,6 +7,25 @@ client = OpenAI(
     api_key="sk-3f3a5a60468645feb79655491c956096",
     base_url="https://api.deepseek.com/v1"
 )
+
+def prompt_merge(prompt_init,data):
+    if not re.search(r"\{[^{}]+\}", prompt_init):
+        return prompt_init
+    else:
+        if "{scripts}" in prompt_init:
+            prompt_init=prompt_init.replace("{scripts}", data["scripts"])
+        if "{truth}" in prompt_init:
+            prompt_init=prompt_init.replace("{truth}", data["truth"])
+        if "{answer}" in data:
+            if "{question}" in prompt_init:
+                prompt_init = prompt_init.replace("{question}", data["question"])
+        if "{referenceAnswer}" in prompt_init:
+            prompt_init=prompt_init.replace("{referenceAnswer}", data["referenceAnswer"])
+        if "{characterName}" in prompt_init:
+            prompt_init=prompt_init.replace("{characterName}", data["characterName"])
+
+    return prompt_init
+
 def chat_with_llm(prompt,text,style, temperature, model):  # deepseek-reasoner   （r1）
     """
     使用 DeepSeek 模型与输入文本进行对话。
@@ -48,18 +67,58 @@ def chat_with_llm(prompt,text,style, temperature, model):  # deepseek-reasoner  
     except Exception as e:
         return f"服务器繁忙，请重新输入进行对话。错误信息: {str(e)}"
 
-# 示例用法
+app = Flask(__name__)
+
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    try:
+        data = request.json
+        prompt = data.get("prompt", "")
+        characterName=data.get("characterName", "")
+        scripts=data.get("scripts", "")
+        truth=data.get("truth", "")
+        question=data.get("question", "")
+        referenceAnswer=data.get("referenceAnswer", "")
+        answer=data.get("answer", "")
+
+        style = data.get("style", "情绪真实")
+        model = data.get("model", "deepseekv3")
+        temperature = data.get("temperature", None)
+
+        # 根据id获取prompt
+        if prompt in ["1", "2", "3", 1, 2, 3]:
+            prompt_file_path = f"prompt_{prompt}.md"
+            if os.path.exists(prompt_file_path):
+                with open(prompt_file_path, "r", encoding="utf-8") as f:
+                    if prompt_file_path.endswith(".json"):
+                        prompt_data = json.load(f)
+                        prompt_init = prompt_data.get("prompt", "")
+                    else:
+                        prompt_init = f.read()
+            else:
+                return jsonify({"error": f"未找到文件: {prompt_file_path}"}), 400
+
+        # 参数插入到 prompt_init 里面
+        prompt = prompt_merge(prompt_init, data)
+
+        # 用户输入的问题
+        text = answer if answer else question
+
+        # return jsonify({"prompt": prompt, "text":text})
+
+        # print("prompt:", prompt)
+        # print("text:", text)
+
+        # 请求LLM响应
+        reply = chat_with_llm(prompt, text, style, temperature, model)
+        print(reply)
+        return jsonify({"reply": reply})
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+
 if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser(description="与LLM对话")
-    parser.add_argument('--prompt', default="你是一个侦探助手。", help="任务prompt（默认：你是一个侦探助手。）")
-    parser.add_argument('--text', required=True, help="输入提示语（必填）")
-    parser.add_argument('--style', default="情绪真实", help="对话风格（默认：情绪真实）")
-    parser.add_argument('--temperature', type=float, default=None, help="采样温度越小越保守，优先级高于style")
-    parser.add_argument('--model', choices=["deepseekv3", "deepseekr1"], default="deepseekv3",
-                        help="选择模型（默认：deepseekv3）")
-    parser.add_argument('--speaker', default="AI助手:", help="回答的对象（默认：AI助手）")
-    args = parser.parse_args()
-
-    reply = chat_with_llm(args.prompt,args.text,args.style,args.temperature,args.model)
-    print("{}: {}".format(args.speaker, reply))
+    app.run(host="124.220.94.212", port=8849)
+    # app.run(host="127.0.0.1", port=5000)
