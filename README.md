@@ -89,9 +89,9 @@
       * **docs/**：项目文档（由何德鑫、徐博阳维护），包含设计文档、API接口文档、会议记录等。
       * **scripts/**：部署脚本（由金子龙维护），用于项目的部署和维护。
 
-2.  **solorpg-proto**：前端/原型仓库，负责项目的前端界面和原型开发。
+2.  **[solorpg-proto](https://github.com/goldthinking/solorpg-proto)**：前端/原型仓库，负责项目的前端界面和原型开发。
 
-3.  **solorpg-backend**：后端仓库，负责项目的后端服务、业务逻辑和AI功能实现。
+3.  **[solorpg-backend](https://github.com/goldthinking/solorpg-backend)**：后端仓库，负责项目的后端服务、业务逻辑和AI功能实现。
 
 -----
 
